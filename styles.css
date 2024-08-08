@@ -65,6 +65,10 @@ button {
   font-family: "Silkscreen", cursive;
 }
 
+strong {
+  color: rgb(41, 6, 68);
+}
+
 @media screen and (max-width: 900px) {
   .containerBox {
     width: 60%;
