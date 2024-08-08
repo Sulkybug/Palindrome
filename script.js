@@ -15,11 +15,11 @@ const checkPalindrome = () => {
   let newStr = str.replace(/[^A-Z0-9]+/gi, "").toLowerCase();
   let result = newStr.split("").reverse().join("");
   if (inputEntry.value.length == 1) {
-    outputResult.innerText = `${inputEntry.value} is a palindrome`;
+    outputResult.innerHTML = `<strong>${inputEntry.value}</strong> is a palindrome`;
   } else if (newStr === result) {
-    outputResult.innerText = `${inputEntry.value} is a palindrome`;
+    outputResult.innerHTML = `<strong>${inputEntry.value}</strong> is a palindrome`;
   } else {
-    outputResult.innerText = `${inputEntry.value} is not a palindrome`;
+    outputResult.innerHTML = `<strong>${inputEntry.value}</strong> is not a palindrome`;
   }
 };
 
