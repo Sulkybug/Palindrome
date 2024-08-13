@@ -24,3 +24,9 @@ const checkPalindrome = () => {
 };
 
 buttonCheck.addEventListener("click", handleCheck);
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    handleCheck();
+  }
+});
